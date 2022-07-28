@@ -76,6 +76,7 @@ RUS_questionable_legitimacy:0"Questionable Legitimacy" #Anastasia
 
 ##American Union State##
 TEX_new_charlemagne:0"The New Charlemagne" #Caroll
+senator_pendergast:0 "The Senator from Pendergast" #Truman
 
 ##Italy##
 ITA_the_mfing_pope:0 "The Pope \n§gThe Pope is head of the Catholic Church, the Supreme Pontiff, and the Bishop of Rome. Currently he presides as Head of State of the Italian Federation, and rules as an Absolute Monarch with his Temporal Power coming directly from God.§!"
@@ -148,6 +149,9 @@ new_diaz:0 "The New Díaz" #Felix Diaz
 the_merciful:0 "The Merciful" #Maria III
 YUC_supreme_leader:0 "Supreme Leader" #Canabal
 ARZ_golden_water:0 "Man of Golden Water" #Goldwater
+MEX_Aloof_Pontificate:0 "Aloof Pontificate \n§gBishop Martínez is committed to the Democratic cause, and holds little love for the Synarcho-Integralist Regime§!" #Martinez
+MEX_archbishop:0 "Archbishop of Mexico City"
+MEX_Tecuichpoch:0 "Legacy of Tecuichpoch"
 
 ### Black Belt 
 preacher_daddy:0 "Daddy King"
@@ -157,3 +161,11 @@ the_hearld:0 "The Herald of the Afrofuture"
 cosmic_pharoah:0 "Cosmic Pharaoh"
 saturnine_shepherd:0 "Saturnine Shepherd"
 second_coming:0 "The Returned Messiah"
+
+
+
+
+chetnik_commander:0 "Chetnik Commander"
+chetnik_commander_desc:0 "Fought in either the Weltkrieg or South Slavic Revolts as a well-organized commander of guerilla fighters."
+chetnik_commander_marshal:0 "Chetnik Commander"
+chetnik_commander_marshal_desc:0 "Fought in either the Weltkrieg or South Slavic Revolts as a well-organized lead commander of guerilla fighters."

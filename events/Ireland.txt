@@ -10547,7 +10547,19 @@ country_event = {
 					}
 					has_game_rule = {
 						rule = IRE_future
-						option = IRE_FUTURE_DEMOCRACY
+						option = IRE_FUTURE_DEMOCRACY_SOCCON
+					}
+					has_game_rule = {
+						rule = IRE_future
+						option = IRE_FUTURE_DEMOCRACY_MARLIB
+					}
+					has_game_rule = {
+						rule = IRE_future
+						option = IRE_FUTURE_DEMOCRACY_SOCLIB
+					}
+					has_game_rule = {
+						rule = IRE_future
+						option = IRE_FUTURE_DEMOCRACY_SOCDEM
 					}
 					has_game_rule = {
 						rule = IRE_future
@@ -10617,9 +10629,23 @@ country_event = {
 			factor = 40
 			modifier = {
 				factor = 0
-				has_game_rule = {
-					rule = IRE_future
-					option = IRE_FUTURE_DEMOCRACY
+				OR = {
+					has_game_rule = {
+						rule = IRE_future
+						option = IRE_FUTURE_DEMOCRACY_SOCCON
+					}
+					has_game_rule = {
+						rule = IRE_future
+						option = IRE_FUTURE_DEMOCRACY_MARLIB
+					}
+					has_game_rule = {
+						rule = IRE_future
+						option = IRE_FUTURE_DEMOCRACY_SOCLIB
+					}
+					has_game_rule = {
+						rule = IRE_future
+						option = IRE_FUTURE_DEMOCRACY_SOCDEM
+					}
 				}
 			}
 		}
@@ -10673,9 +10699,23 @@ country_event = {
 			factor = 40
 			modifier = {
 				factor = 0
-				has_game_rule = {
-					rule = IRE_future
-					option = IRE_FUTURE_DEMOCRACY
+				OR = {
+					has_game_rule = {
+						rule = IRE_future
+						option = IRE_FUTURE_DEMOCRACY_SOCCON
+					}
+					has_game_rule = {
+						rule = IRE_future
+						option = IRE_FUTURE_DEMOCRACY_MARLIB
+					}
+					has_game_rule = {
+						rule = IRE_future
+						option = IRE_FUTURE_DEMOCRACY_SOCLIB
+					}
+					has_game_rule = {
+						rule = IRE_future
+						option = IRE_FUTURE_DEMOCRACY_SOCDEM
+					}
 				}
 			}
 		}
@@ -10711,11 +10751,21 @@ country_event = {
 		}
 		add_stability = 0.02
 		hidden_effect = {
+                        set_politics = {
+			        ruling_party = authoritarian_democrat
+			        elections_allowed = yes
+		        }
 			create_country_leader = {
 				name = "Richard Mulcahy"
 				picture = "gfx/leaders/IRE/Portrait_Ireland_Richard_Mulcahy_Civilian.png"
 				expire = "1965.1.1"
 				ideology = authoritarian_democrat_subtype
+			}
+                        create_country_leader = {
+				name = "Richard Mulcahy"
+				picture = "gfx/leaders/IRE/Portrait_Ireland_Richard_Mulcahy_Civilian.png"
+				expire = "1965.1.1"
+				ideology = liberal_conservative_subtype
 			}
 			set_party_name = {
 				ideology = authoritarian_democrat
@@ -10812,7 +10862,6 @@ country_event = {
 	picture = GFX_report_event_IRE_dail_meeting
 	
 	trigger = {
-		has_government = authoritarian_democrat
 		is_subject = no
 	}
 	
@@ -10844,6 +10893,26 @@ country_event = {
 
 	option = { # SocDems
 		name = ire.250.a
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = IRE_future
+						option = IRE_FUTURE_DEMOCRACY_SOCCON
+					}
+					has_game_rule = {
+						rule = IRE_future
+						option = IRE_FUTURE_DEMOCRACY_MARLIB
+					}
+					has_game_rule = {
+						rule = IRE_future
+						option = IRE_FUTURE_DEMOCRACY_SOCLIB
+					}
+				}
+			}
+		}
 		set_politics = {
 			ruling_party = social_democrat
 			elections_allowed = yes
@@ -10863,8 +10932,28 @@ country_event = {
 		}
 	}
 
-	option = { # SocCons
+	option = { # SocLibs
 		name = ire.250.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = IRE_future
+						option = IRE_FUTURE_DEMOCRACY_SOCCON
+					}
+					has_game_rule = {
+						rule = IRE_future
+						option = IRE_FUTURE_DEMOCRACY_MARLIB
+					}
+					has_game_rule = {
+						rule = IRE_future
+						option = IRE_FUTURE_DEMOCRACY_SOCDEM
+					}
+				}
+			}
+		}
 		set_politics = {
 			ruling_party = social_conservative
 			elections_allowed = yes
@@ -10886,6 +10975,26 @@ country_event = {
 	
 	option = { # MarkLibs
 		name = ire.250.c
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = IRE_future
+						option = IRE_FUTURE_DEMOCRACY_SOCCON
+					}
+					has_game_rule = {
+						rule = IRE_future
+						option = IRE_FUTURE_DEMOCRACY_SOCLIB
+					}
+					has_game_rule = {
+						rule = IRE_future
+						option = IRE_FUTURE_DEMOCRACY_SOCDEM
+					}
+				}
+			}
+		}
 		set_politics = {
 			ruling_party = market_liberal
 			elections_allowed = yes
@@ -10905,8 +11014,28 @@ country_event = {
 		}
 	}
 	
-	option = { # SocLibs
+	option = { # SocCons
 		name = ire.250.e
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = IRE_future
+						option = IRE_FUTURE_DEMOCRACY_MARLIB
+					}
+					has_game_rule = {
+						rule = IRE_future
+						option = IRE_FUTURE_DEMOCRACY_SOCLIB
+					}
+					has_game_rule = {
+						rule = IRE_future
+						option = IRE_FUTURE_DEMOCRACY_SOCDEM
+					}
+				}
+			}
+		}
 		set_politics = {
 			ruling_party = social_liberal
 			elections_allowed = yes

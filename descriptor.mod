@@ -66,6 +66,7 @@ replace_path="history/general"
 replace_path="map/strategicregions"
 replace_path="map/supplyareas"
 replace_path="portraits"
+
 version="0.01"
 tags={
 	"Alternative History"
@@ -74,5 +75,5 @@ tags={
 	"National Focuses"
 }
 supported_version="1.11.*"
-path="C:/Users/User/Documents/Paradox Interactive/Hearts of Iron IV/mod/kx"
-remote_file_id="2807896703"
+path="C:/Users/User/Desktop/Documents/Paradox Interactive/Hearts of Iron IV/mod/kx"
+remote_file_id="2206134307"
